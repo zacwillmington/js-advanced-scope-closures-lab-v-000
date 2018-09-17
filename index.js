@@ -15,3 +15,20 @@ function produceDrivingRange(blockRange){
         }
     }
 }
+
+function produceTipCalculator(percentage){
+    return function(amount){
+        return amount * percentage;
+    }
+}
+
+function createDriver(){
+    let driveId = 0
+
+    return class Driver {
+        constructor(name){
+            this.id = ++driveId;
+            this.name = name;
+        }
+    }
+}
