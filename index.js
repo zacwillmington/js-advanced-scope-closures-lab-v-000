@@ -27,6 +27,7 @@ function createDriver(){
 
     return class Driver {
         constructor(name){
+            this.id = ++driveId;
             this.name = name;
         }
     }
