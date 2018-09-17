@@ -18,6 +18,6 @@ function produceDrivingRange(blockRange){
 
 function produceTipCalculator(percentage){
     return function(amount){
-        
+        return amount * percentage;
     }
 }
